@@ -1579,26 +1579,45 @@ body {
 }
 
 /* Dark mode fixes for search results */
-[data-theme=`"dark`"] .room-list {
+[data-theme="dark"] .room-list {
     background: var(--bg-main) !important;
     border-color: var(--border-color) !important;
 }
-[data-theme=`"dark`"] .room-card {
+[data-theme="dark"] .room-card {
     background: var(--bg-card) !important;
     border-color: var(--border-color) !important;
 }
-[data-theme=`"dark`"] .room-card h3 {
+[data-theme="dark"] .room-card h3 {
     color: var(--text-main) !important;
 }
-[data-theme=`"dark`"] .room-card p {
+[data-theme="dark"] .room-card p {
     color: var(--text-muted) !important;
 }
-[data-theme=`"dark`"] .search-filter select {
+[data-theme="dark"] .search-filter select {
     background: var(--bg-card) !important;
     color: var(--text-main) !important;
     border-color: var(--border-color) !important;
 }
-[data-theme=`"dark`"] .search-filter {
+[data-theme="dark"] .search-filter {
     color: var(--text-muted) !important;
+}
+
+/* Mobile Responsive Header */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 16px;
+        padding: 12px 16px;
+    }
+    .main-nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+    }
+    .brand {
+        font-size: 1.4rem;
+    }
 }
 
