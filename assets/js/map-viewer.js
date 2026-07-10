@@ -10,7 +10,7 @@
  *   segments: [
  *     {
  *       floorLabel: "Ground Floor (Left Wing)",
- *       imageUrl: "/campusnav/assets/maps/main_ground_left.png",
+ *       imageUrl: "/assets/maps/main_ground_left.png",
  *       imageWidth: 1790,
  *       imageHeight: 1039,
  *       points: [ { nodeId, name, type, x, y }, ... ]  // in path order

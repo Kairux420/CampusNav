@@ -82,7 +82,7 @@ $reports = $stmt->fetchAll();
                                         $alertTitle = urlencode("Issue: " . $report['issue_type']);
                                         $alertMsg = urlencode("Reported at " . $report['node_name'] . " - " . $report['description']);
                                     ?>
-                                    <a href="/campusnav/admin_alerts.php?title=<?php echo $alertTitle; ?>&msg=<?php echo $alertMsg; ?>" class="btn btn-sm" style="background: var(--accent-secondary); color: var(--ink); padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 0.85rem; font-weight: 600; display: inline-block;">Create Alert</a>
+                                    <a href="/admin_alerts.php?title=<?php echo $alertTitle; ?>&msg=<?php echo $alertMsg; ?>" class="btn btn-sm" style="background: var(--accent-secondary); color: var(--ink); padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 0.85rem; font-weight: 600; display: inline-block;">Create Alert</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

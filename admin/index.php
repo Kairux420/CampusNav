@@ -33,14 +33,14 @@ require_once '../includes/header.php';
         </a>
 
         <!-- Coordinate Picker -->
-        <a href="/campusnav/coordinate_picker.php" style="text-decoration: none; display: flex; flex-direction: column; background: var(--bg-card); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; color: var(--text-main);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='none'; this.style.boxShadow='var(--shadow-md)';">
+        <a href="/coordinate_picker.php" style="text-decoration: none; display: flex; flex-direction: column; background: var(--bg-card); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; color: var(--text-main);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='none'; this.style.boxShadow='var(--shadow-md)';">
             <div style="font-size: 2.5rem; margin-bottom: 15px;">📍</div>
             <h3 style="margin: 0 0 10px 0; font-size: 1.4rem;">Coordinate Picker</h3>
             <p style="color: var(--text-muted); margin: 0; line-height: 1.5;">Click on maps to capture exact pixel coordinates and generate SQL for new nodes (rooms, stairs, etc).</p>
         </a>
 
         <!-- Edge Linker -->
-        <a href="/campusnav/edge_linker.php" style="text-decoration: none; display: flex; flex-direction: column; background: var(--bg-card); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; color: var(--text-main);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='none'; this.style.boxShadow='var(--shadow-md)';">
+        <a href="/edge_linker.php" style="text-decoration: none; display: flex; flex-direction: column; background: var(--bg-card); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; color: var(--text-main);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='none'; this.style.boxShadow='var(--shadow-md)';">
             <div style="font-size: 2.5rem; margin-bottom: 15px;">🔗</div>
             <h3 style="margin: 0 0 10px 0; font-size: 1.4rem;">Edge Linker</h3>
             <p style="color: var(--text-muted); margin: 0; line-height: 1.5;">Draw connections (edges) between nodes to enable pathfinding and navigation routing.</p>
@@ -54,7 +54,7 @@ require_once '../includes/header.php';
         </a>
 
         <!-- Global Alerts -->
-        <a href="/campusnav/admin_alerts.php" style="text-decoration: none; display: flex; flex-direction: column; background: var(--bg-card); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; color: var(--text-main);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='none'; this.style.boxShadow='var(--shadow-md)';">
+        <a href="/admin_alerts.php" style="text-decoration: none; display: flex; flex-direction: column; background: var(--bg-card); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; color: var(--text-main);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='none'; this.style.boxShadow='var(--shadow-md)';">
             <div style="font-size: 2.5rem; margin-bottom: 15px;">📢</div>
             <h3 style="margin: 0 0 10px 0; font-size: 1.4rem;">Global Alerts</h3>
             <p style="color: var(--text-muted); margin: 0; line-height: 1.5;">Broadcast campus-wide notifications to all active users regarding navigation changes or emergencies.</p>

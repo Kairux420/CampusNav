@@ -126,7 +126,7 @@ if ($fromId > 0 && $toId > 0) {
 
                 $segments[] = [
                     'floorLabel' => $node['floor_name'] . ' (' . $node['wing'] . ')',
-                    'imageUrl' => '/campusnav/assets/maps/' . $node['map_image'],
+                    'imageUrl' => '/assets/maps/' . $node['map_image'],
                     'imageWidth' => $dimensions ? $dimensions[0] : 0,
                     'imageHeight' => $dimensions ? $dimensions[1] : 0,
                     'points' => [],
@@ -275,11 +275,11 @@ require_once 'includes/header.php';
                     </ol>
                 </details>
 
-                <script src="/campusnav/assets/vendor/leaflet/leaflet.js"></script>
+                <script src="/assets/vendor/leaflet/leaflet.js"></script>
                 <script>
                     const routeData = <?php echo $routeSegmentsJson; ?>;
                 </script>
-                <script src="/campusnav/assets/js/map-viewer.js"></script>
+                <script src="/assets/js/map-viewer.js"></script>
             </div>
         <?php endif; ?>
     <?php endif; ?>

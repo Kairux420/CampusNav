@@ -23,9 +23,9 @@ if ($isLoggedIn && !$isGuest && isset($pdo)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CampusNav</title>
-    <link rel="stylesheet" href="/campusnav/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <?php if (!empty($loadLeafletCss)): ?>
-        <link rel="stylesheet" href="/campusnav/assets/vendor/leaflet/leaflet.css">
+        <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
     <?php endif; ?>
     <script>
         // Init theme immediately to prevent flash
@@ -58,22 +58,22 @@ if ($isLoggedIn && !$isGuest && isset($pdo)) {
     <?php endif; ?>
     <header class="site-header">
         <div class="header-inner">
-            <a href="/campusnav/home.php" class="brand">CampusNav</a>
+            <a href="/home.php" class="brand">CampusNav</a>
             <?php if ($isLoggedIn): ?>
                 <nav class="main-nav">
-                    <a href="/campusnav/home.php">Home</a>
-                    <a href="/campusnav/about.php">About</a>
-                    <a href="/campusnav/search.php">Search</a>
-                    <a href="/campusnav/chat.php">AI Assistant</a>
-                    <a href="/campusnav/notifications.php">Notifications</a>
+                    <a href="/home.php">Home</a>
+                    <a href="/about.php">About</a>
+                    <a href="/search.php">Search</a>
+                    <a href="/chat.php">AI Assistant</a>
+                    <a href="/notifications.php">Notifications</a>
                     <?php if (!$isGuest && (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin')): ?>
-                        <a href="/campusnav/report_issue.php">Report Issue</a>
+                        <a href="/report_issue.php">Report Issue</a>
                     <?php endif; ?>
                     <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
-                        <a href="/campusnav/admin/index.php">Admin Hub</a>
+                        <a href="/admin/index.php">Admin Hub</a>
                     <?php endif; ?>
-                    <a href="/campusnav/profile.php">Profile</a>
-                    <a href="/campusnav/logout.php">Log Out</a>
+                    <a href="/profile.php">Profile</a>
+                    <a href="/logout.php">Log Out</a>
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">🌓</button>
                 </nav>
             <?php endif; ?>

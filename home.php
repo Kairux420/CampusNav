@@ -125,7 +125,7 @@ require_once 'includes/header.php';
             <div id="home-map" style="width: 100%; height: 60vh; min-height: 400px; border-radius: 8px; background: var(--bg-main); border: 1px solid var(--border-color); z-index: 1;"></div>
         </div>
 
-        <script src="/campusnav/assets/vendor/leaflet/leaflet.js"></script>
+        <script src="/assets/vendor/leaflet/leaflet.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var map = L.map('home-map', {
@@ -137,7 +137,7 @@ require_once 'includes/header.php';
                     attributionControl: false
                 });
 
-                var imageUrl = '/campusnav/assets/maps/<?php echo htmlspecialchars($defaultFloor['map_image']); ?>';
+                var imageUrl = '/assets/maps/<?php echo htmlspecialchars($defaultFloor['map_image']); ?>';
                 var imgW = <?php echo $mapWidth; ?>;
                 var imgH = <?php echo $mapHeight; ?>;
                 var imageBounds = [[0, 0], [imgH, imgW]]; 
