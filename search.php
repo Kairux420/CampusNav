@@ -16,17 +16,17 @@ $wingOptions = [];
 $categoryOptions = [];
 
 $stmt = $pdo->query(
-    "SELECT DISTINCT f.floor_name FROM nodes n LEFT JOIN floors f ON f.floor_id = n.floor_id WHERE n.node_type = 'room' ORDER BY f.floor_name ASC"
+    "SELECT DISTINCT f.floor_name FROM nodes n LEFT JOIN floors f ON f.floor_id = n.floor_id WHERE n.node_type IN ('room', 'entrance') ORDER BY f.floor_name ASC"
 );
 $floorOptions = array_values(array_filter(array_map(fn($row) => $row['floor_name'], $stmt->fetchAll())));
 
 $stmt = $pdo->query(
-    "SELECT DISTINCT f.wing FROM nodes n LEFT JOIN floors f ON f.floor_id = n.floor_id WHERE n.node_type = 'room' AND f.wing IS NOT NULL AND f.wing != '' ORDER BY f.wing ASC"
+    "SELECT DISTINCT f.wing FROM nodes n LEFT JOIN floors f ON f.floor_id = n.floor_id WHERE n.node_type IN ('room', 'entrance') AND f.wing IS NOT NULL AND f.wing != '' ORDER BY f.wing ASC"
 );
 $wingOptions = array_values(array_filter(array_map(fn($row) => $row['wing'], $stmt->fetchAll())));
 
 $stmt = $pdo->query(
-    "SELECT DISTINCT category FROM nodes WHERE node_type = 'room' AND category IS NOT NULL AND category != '' ORDER BY category ASC"
+    "SELECT DISTINCT category FROM nodes WHERE node_type IN ('room', 'entrance') AND category IS NOT NULL AND category != '' ORDER BY category ASC"
 );
 $categoryOptions = array_values(array_filter(array_map(fn($row) => $row['category'], $stmt->fetchAll())));
 
@@ -43,7 +43,7 @@ if ($query !== '' || $selectedCategory !== '') {
     $sql = "SELECT n.node_id, n.room_code, n.node_name, n.description, n.category, f.floor_name, f.wing " .
         "FROM nodes n " .
         "LEFT JOIN floors f ON f.floor_id = n.floor_id " .
-        "WHERE n.node_type = 'room'";
+        "WHERE n.node_type IN ('room', 'entrance')";
     
     $params = [];
 

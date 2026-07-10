@@ -61,7 +61,7 @@ if ($toId > 0 && $fromId === 0 && $fromQuery !== '') {
         "SELECT n.node_id, n.room_code, n.node_name, n.description, n.category, f.floor_name, f.wing " .
         "FROM nodes n " .
         "LEFT JOIN floors f ON f.floor_id = n.floor_id " .
-        "WHERE n.node_type = 'room' AND (" .
+        "WHERE n.node_type IN ('room', 'entrance') AND (" .
         "REPLACE(REPLACE(n.room_code, '-', ''), ' ', '') LIKE ? OR " .
         "REPLACE(REPLACE(n.node_name, '-', ''), ' ', '') LIKE ? OR " .
         "n.category LIKE ? OR n.category LIKE ? OR " .
