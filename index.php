@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <button type="submit" name="register" class="btn-primary" style="margin-top:10px;">Create Account</button>
                 <a href="google_login.php" class="btn-primary google-btn" style="text-align: center; text-decoration: none; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; background: #fff; color: #444; border: 1px solid #ddd; box-shadow: var(--shadow-sm);">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google G" width="18" height="18">
+                    <img src="/assets/images/google-logo.svg" alt="Google G" width="18" height="18">
                     Sign up with Google
                 </a>
                 <div class="auth-separator">OR</div>
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <button type="submit" name="login" class="btn-primary" style="margin-top:10px;">Log In</button>
                 <a href="google_login.php" class="btn-primary google-btn" style="text-align: center; text-decoration: none; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; background: #fff; color: #444; border: 1px solid #ddd; box-shadow: var(--shadow-sm);">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google G" width="18" height="18">
+                    <img src="/assets/images/google-logo.svg" alt="Google G" width="18" height="18">
                     Log in with Google
                 </a>
                 <div class="auth-separator">OR</div>
